@@ -1,0 +1,12 @@
+[Inputs]
+data_plus
+data_minus
+reset
+clk
+[Outputs]
+sync_valid_flag
+pid_valid_flag
+vga_char_we
+eof
+=vga_char_di[7:0]=
+[BiDir]

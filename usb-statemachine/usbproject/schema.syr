@@ -1,0 +1,595 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: schema.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "schema.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "schema"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : schema
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/usb-statemachine/usbproject/FSM_SendByte.vhd" in Library work.
+Architecture rtl of Entity fsm_sendbyte is up to date.
+Compiling vhdl file "D:/usb-statemachine/usbproject/syncreader.vhd" in Library work.
+Entity <syncreader> compiled.
+Entity <syncreader> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/usb-statemachine/usbproject/schema.vhf" in Library work.
+Architecture behavioral of Entity ifd_mxilinx_schema is up to date.
+Architecture behavioral of Entity schema is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <schema> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FSM_SendByte> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <syncreader> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <IFD_MXILINX_schema> in library <work> (architecture <behavioral>) with generics.
+	INIT = '0'
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <schema> in library <work> (Architecture <behavioral>).
+    Set user-defined property "CLKDV_DIVIDE =  2.0" for instance <XLXI_1> in unit <schema>.
+    Set user-defined property "CLKFX_DIVIDE =  5" for instance <XLXI_1> in unit <schema>.
+    Set user-defined property "CLKFX_MULTIPLY =  6" for instance <XLXI_1> in unit <schema>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <XLXI_1> in unit <schema>.
+    Set user-defined property "CLKIN_PERIOD =  10.0" for instance <XLXI_1> in unit <schema>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <XLXI_1> in unit <schema>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <XLXI_1> in unit <schema>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <XLXI_1> in unit <schema>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <XLXI_1> in unit <schema>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <XLXI_1> in unit <schema>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <XLXI_1> in unit <schema>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <XLXI_1> in unit <schema>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <XLXI_1> in unit <schema>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <XLXI_1> in unit <schema>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <XLXI_1> in unit <schema>.
+WARNING:Xst:2211 - "D:/usb-statemachine/usbproject/schema.vhf" line 310: Instantiating black box module <VGAtxt48x20>.
+WARNING:Xst:753 - "D:/usb-statemachine/usbproject/schema.vhf" line 338: Unconnected output port 'Busy' of component 'FSM_SendByte'.
+    Set user-defined property "HU_SET =  XLXI_24_0" for instance <XLXI_24> in unit <schema>.
+    Set user-defined property "HU_SET =  XLXI_25_1" for instance <XLXI_25> in unit <schema>.
+Entity <schema> analyzed. Unit <schema> generated.
+
+Analyzing Entity <FSM_SendByte> in library <work> (Architecture <rtl>).
+Entity <FSM_SendByte> analyzed. Unit <FSM_SendByte> generated.
+
+Analyzing Entity <syncreader> in library <work> (Architecture <behavioral>).
+WARNING:Xst:795 - "D:/usb-statemachine/usbproject/syncreader.vhd" line 128: Size of operands are different : result is <false>.
+Entity <syncreader> analyzed. Unit <syncreader> generated.
+
+Analyzing generic Entity <IFD_MXILINX_schema> in library <work> (Architecture <behavioral>).
+	INIT = '0'
+    Set user-defined property "INIT =  0" for instance <I_36_15> in unit <IFD_MXILINX_schema>.
+    Set user-defined property "IOB =  TRUE" for instance <I_36_15> in unit <IFD_MXILINX_schema>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <I_36_24> in unit <IFD_MXILINX_schema>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <I_36_24> in unit <IFD_MXILINX_schema>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_24> in unit <IFD_MXILINX_schema>.
+Entity <IFD_MXILINX_schema> analyzed. Unit <IFD_MXILINX_schema> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <FSM_SendByte>.
+    Related source file is "D:/usb-statemachine/usbproject/FSM_SendByte.vhd".
+    Found finite state machine <FSM_0> for signal <State>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 5                                              |
+    | Clock              | Clk                       (rising_edge)        |
+    | Reset              | Reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | sreset                                         |
+    | Power Up State     | sreset                                         |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16x8-bit ROM for signal <DO>.
+    Found 8-bit register for signal <regDI>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 ROM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <FSM_SendByte> synthesized.
+
+
+Synthesizing Unit <syncreader>.
+    Related source file is "D:/usb-statemachine/usbproject/syncreader.vhd".
+WARNING:Xst:646 - Signal <shift_reg<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pid_buffer> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_1> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 21                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | current_state$cmp_eq0000  (positive)           |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s_search_sync                                  |
+    | Power Up State     | s_search_sync                                  |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <vga_char_di>.
+    Found 1-bit register for signal <eof>.
+    Found 1-bit register for signal <pid_valid_flag>.
+    Found 1-bit register for signal <vga_char_we>.
+    Found 1-bit register for signal <sync_valid_flag>.
+    Found 4-bit register for signal <bit_count>.
+    Found 4-bit adder for signal <bit_count$share0000> created at line 111.
+    Found 3-bit register for signal <consecutive_ones>.
+    Found 4-bit comparator equal for signal <current_state$cmp_eq0003> created at line 134.
+    Found 1-bit xor2 for signal <decoded_bit$xor0000> created at line 104.
+    Found 1-bit register for signal <eof_first_bit_flag>.
+    Found 4-bit comparator not equal for signal <pid_valid_flag$cmp_ne0000> created at line 134.
+    Found 1-bit register for signal <prev_bit>.
+    Found 3-bit up counter for signal <sample_count>.
+    Found 8-bit register for signal <shift_reg>.
+    Found 1-bit register for signal <skip_next_bit>.
+    Found 3-bit adder for signal <v_consecutive_ones$addsub0000> created at line 159.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  30 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <syncreader> synthesized.
+
+
+Synthesizing Unit <IFD_MXILINX_schema>.
+    Related source file is "D:/usb-statemachine/usbproject/schema.vhf".
+Unit <IFD_MXILINX_schema> synthesized.
+
+
+Synthesizing Unit <schema>.
+    Related source file is "D:/usb-statemachine/usbproject/schema.vhf".
+WARNING:Xst:653 - Signal <XLXI_20_Reset_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_1_RST_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_1_PSINCDEC_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_1_PSEN_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_1_PSCLK_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_1_DSSEN_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_10_Home_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_10_Goto00_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <schema> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 2
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 12
+ 1-bit register                                        : 7
+ 3-bit register                                        : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 3
+# Comparators                                          : 2
+ 4-bit comparator equal                                : 1
+ 4-bit comparator not equal                            : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <XLXI_22/current_state/FSM> on signal <current_state[1:2]> with user encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ s_search_sync | 00
+ s_read_pid    | 01
+ s_read_data   | 10
+---------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <XLXI_20/State/FSM> on signal <State[1:6]> with one-hot encoding.
+--------------------
+ State  | Encoding
+--------------------
+ sreset | 000001
+ sready | 000010
+ swaith | 000100
+ ssendh | 001000
+ swaitl | 010000
+ ssendl | 100000
+--------------------
+Reading core <VGAtxt48x20.ngc>.
+Loading core <VGAtxt48x20> for timing and area information for instance <XLXI_10>.
+WARNING:Xst:1426 - The value init of the FF/Latch FFd6 hinder the constant cleaning in the block FSM.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:2677 - Node <shift_reg_7> of sequential type is unconnected in block <XLXI_22>.
+WARNING:Xst:2677 - Node <shift_reg_7> of sequential type is unconnected in block <syncreader>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 2
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 39
+ Flip-Flops                                            : 39
+# Comparators                                          : 2
+ 4-bit comparator equal                                : 1
+ 4-bit comparator not equal                            : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch XLXI_20/State_FSM_FFd6 hinder the constant cleaning in the block schema.
+   You should achieve better results by setting this init to 0.
+
+Optimizing unit <schema> ...
+
+Optimizing unit <syncreader> ...
+WARNING:Xst:1293 - FF/Latch <bit_count_3> has a constant value of 0 in block <syncreader>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <IFD_MXILINX_schema> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block schema, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 49
+ Flip-Flops                                            : 49
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : schema.ngr
+Top Level Output File Name         : schema
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 11
+
+Cell Usage :
+# BELS                             : 450
+#      AND2                        : 1
+#      AND3                        : 4
+#      AND3B1                      : 4
+#      BUF                         : 3
+#      GND                         : 4
+#      INV                         : 9
+#      LUT1                        : 43
+#      LUT2                        : 36
+#      LUT2_L                      : 4
+#      LUT3                        : 37
+#      LUT3_L                      : 2
+#      LUT4                        : 149
+#      LUT4_D                      : 4
+#      LUT4_L                      : 6
+#      MUXCY                       : 53
+#      MUXF5                       : 22
+#      MUXF5_L                     : 2
+#      MUXF6                       : 6
+#      OR2                         : 5
+#      VCC                         : 4
+#      XOR2                        : 1
+#      XORCY                       : 51
+# FlipFlops/Latches                : 147
+#      FD                          : 35
+#      FDC                         : 9
+#      FDCE                        : 21
+#      FDE                         : 22
+#      FDP                         : 2
+#      FDPE                        : 8
+#      FDR                         : 14
+#      FDRE                        : 35
+#      FDSE                        : 1
+# RAMS                             : 2
+#      RAMB16_S9                   : 1
+#      RAMB16_S9_S9                : 1
+# Shift Registers                  : 3
+#      SRL16                       : 3
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 11
+#      IBUF                        : 3
+#      IBUFG                       : 1
+#      OBUF                        : 7
+# DCMs                             : 1
+#      DCM_SP                      : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      174  out of   4656     3%  
+ Number of Slice Flip Flops:            145  out of   9312     1%  
+ Number of 4 input LUTs:                293  out of   9312     3%  
+    Number used as logic:               290
+    Number used as Shift registers:       3
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of    232     4%  
+    IOB Flip Flops:                       2
+ Number of BRAMs:                         2  out of     20    10%  
+ Number of GCLKs:                         2  out of     24     8%  
+ Number of DCMs:                          1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk_50MHz                          | XLXI_1:CLK0            | 86    |
+Clk_50MHz                          | XLXI_1:CLKFX           | 67    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+-----------------------------+-------+
+Control Signal                     | Buffer(FF name)             | Load  |
+-----------------------------------+-----------------------------+-------+
+reset                              | IBUF                        | 32    |
+N0(XST_GND:G)                      | NONE(XLXI_20/State_FSM_FFd1)| 6     |
+XLXI_24/XLXN_1(XLXI_24/I_36_29:G)  | NONE(XLXI_24/I_36_15)       | 1     |
+XLXI_25/XLXN_1(XLXI_25/I_36_29:G)  | NONE(XLXI_25/I_36_15)       | 1     |
+-----------------------------------+-----------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 44.988ns (Maximum Frequency: 22.228MHz)
+   Minimum input arrival time before clock: 4.335ns
+   Maximum output required time after clock: 5.518ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk_50MHz'
+  Clock period: 44.988ns (frequency: 22.228MHz)
+  Total number of paths / destination ports: 3379 / 323
+-------------------------------------------------------------------------
+Delay:               7.498ns (Levels of Logic = 9)
+  Source:            XLXI_10/I_CursorCnt/ScrollBase_0 (FF)
+  Destination:       XLXI_10/XLXI_115/XLXI_147/Q (FF)
+  Source Clock:      Clk_50MHz rising 1.2X
+  Destination Clock: Clk_50MHz rising
+
+  Data Path: XLXI_10/I_CursorCnt/ScrollBase_0 to XLXI_10/XLXI_115/XLXI_147/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             10   0.591   0.961  I_CursorCnt/ScrollBase_0 (I_CursorCnt/ScrollBase<0>)
+     LUT2:I1->O            1   0.704   0.000  XLXI_5/Madd_Rd_Address_10_6_add0000_lut<0> (XLXI_5/Madd_Rd_Address_10_6_add0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_5/Madd_Rd_Address_10_6_add0000_cy<0> (XLXI_5/Madd_Rd_Address_10_6_add0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_5/Madd_Rd_Address_10_6_add0000_cy<1> (XLXI_5/Madd_Rd_Address_10_6_add0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_5/Madd_Rd_Address_10_6_add0000_cy<2> (XLXI_5/Madd_Rd_Address_10_6_add0000_cy<2>)
+     MUXCY:CI->O           0   0.059   0.000  XLXI_5/Madd_Rd_Address_10_6_add0000_cy<3> (XLXI_5/Madd_Rd_Address_10_6_add0000_cy<3>)
+     XORCY:CI->O           2   0.804   0.622  XLXI_5/Madd_Rd_Address_10_6_add0000_xor<4> (Rd_A<10>)
+     LUT2:I0->O            1   0.704   0.000  XLXI_113/Mcompar_CursorActive_cmp_eq0000_lut<5> (XLXI_113/Mcompar_CursorActive_cmp_eq0000_lut<5>)
+     MUXCY:S->O            1   0.864   0.595  XLXI_113/Mcompar_CursorActive_cmp_eq0000_cy<5> (XLXI_113/CursorActive_cmp_eq0000)
+     LUT3:I0->O            1   0.704   0.000  XLXI_113/CursorActive_and00011 (XLXI_113/CursorActive_and0001)
+     FDR:D                     0.308          XLXI_115/XLXI_147/Q
+    ----------------------------------------
+    Total                      7.498ns (5.320ns logic, 2.178ns route)
+                                       (71.0% logic, 29.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk_50MHz'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.335ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       XLXI_22/eof_first_bit_flag (FF)
+  Destination Clock: Clk_50MHz rising 1.2X
+
+  Data Path: reset to XLXI_22/eof_first_bit_flag
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   1.218   1.438  reset_IBUF (reset_IBUF)
+     LUT4:I0->O            1   0.704   0.420  XLXI_22/eof_first_bit_flag_and00001 (XLXI_22/eof_first_bit_flag_and0000)
+     FDE:CE                    0.555          XLXI_22/eof_first_bit_flag
+    ----------------------------------------
+    Total                      4.335ns (2.477ns logic, 1.858ns route)
+                                       (57.1% logic, 42.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_50MHz'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              5.518ns (Levels of Logic = 3)
+  Source:            XLXI_10/XLXI_115/XLXI_155/PixOut (FF)
+  Destination:       VGA_B (PAD)
+  Source Clock:      Clk_50MHz rising
+
+  Data Path: XLXI_10/XLXI_115/XLXI_155/PixOut to VGA_B
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.591   0.531  XLXI_115/XLXI_155/PixOut (VGA_RGB)
+     end scope: 'XLXI_10'
+     BUF:I->O              1   0.704   0.420  XLXI_11 (VGA_R_OBUF)
+     OBUF:I->O                 3.272          VGA_R_OBUF (VGA_R)
+    ----------------------------------------
+    Total                      5.518ns (4.567ns logic, 0.951ns route)
+                                       (82.8% logic, 17.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.60 secs
+ 
+--> 
+
+Total memory usage is 4532076 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,39 @@
+xst -intstyle ise -ifn "D:/usb/usbproject/syncreader.xst" -ofn "D:/usb/usbproject/syncreader.syr" 
+vhdtdtfi -lib work syncreader.vhd -prj usbproject -o syncreader.spl -module syncreader -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e syncreader.spl D:/usb/usbproject/syncreader.sym 
+vhdtdtfi -lib work syncreader.vhd -prj usbproject -o syncreader.spl -module syncreader -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e syncreader.spl D:/usb/usbproject/syncreader.sym 
+vhdtdtfi -lib work syncreader.vhd -prj usbproject -o syncreader.spl -module syncreader -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e syncreader.spl E:/usb/usbproject/syncreader.sym 
+vhdtdtfi -lib work syncreader.vhd -prj usbproject -o syncreader.spl -module syncreader -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e syncreader.spl E:/usb/usbproject/syncreader.sym 
+vhdtdtfi -lib work syncreader.vhd -prj usbproject -o syncreader.spl -module syncreader -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e syncreader.spl E:/usb/usbproject/syncreader.sym 
+vhdtdtfi -lib work syncreader.vhd -prj usbproject -o syncreader.spl -module syncreader -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e syncreader.spl E:/usb/usbproject/syncreader.sym 
+vhdtdtfi -lib work syncreader.vhd -prj usbproject -o syncreader.spl -module syncreader -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e syncreader.spl E:/usb/usbproject/syncreader.sym 
+vhdtdtfi -lib work syncreader.vhd -prj usbproject -o syncreader.spl -module syncreader -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e syncreader.spl E:/usb/usbproject/syncreader.sym 
+vhdtdtfi -lib work syncreader.vhd -prj usbproject -o syncreader.spl -module syncreader -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e syncreader.spl E:/usb/usbproject/syncreader.sym 
+vhdtdtfi -lib work syncreader.vhd -prj usbproject -o syncreader.spl -module syncreader -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e syncreader.spl E:/usb/usbproject/syncreader.sym 
+vhdtdtfi -lib work syncreader.vhd -prj usbproject -o syncreader.spl -module syncreader -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e syncreader.spl E:/usb/usbproject/syncreader.sym 
+vhdtdtfi -lib work syncreader.vhd -prj usbproject -o syncreader.spl -module syncreader -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e syncreader.spl E:/usb/usbproject/syncreader.sym 
+vhdtdtfi -lib work syncreader.vhd -prj usbproject -o syncreader.spl -module syncreader -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e syncreader.spl E:/usb/usbproject/syncreader.sym 
+vhdtdtfi -lib work syncreader.vhd -prj usbproject -o syncreader.spl -module syncreader -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e syncreader.spl E:/usb-statemachine/usbproject/syncreader.sym 
+vhdtdtfi -lib work syncreader.vhd -prj usbproject -o syncreader.spl -module syncreader -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e syncreader.spl D:/usb-statemachine/usbproject/syncreader.sym 
+vhdtdtfi -lib work syncreader.vhd -prj usbproject -o syncreader.spl -module syncreader -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e syncreader.spl D:/usb-statemachine/usbproject/syncreader.sym 
+vhdtdtfi -lib work syncreader.vhd -prj usbproject -o syncreader.spl -module syncreader -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e syncreader.spl D:/usb-statemachine/usbproject/syncreader.sym 
+vhdtdtfi -lib work syncreader.vhd -prj usbproject -o syncreader.spl -module syncreader -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e syncreader.spl D:/usb-statemachine/usbproject/syncreader.sym 
+vhdtdtfi -lib work syncreader.vhd -prj usbproject -o syncreader.spl -module syncreader -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e syncreader.spl D:/usb-statemachine/usbproject/syncreader.sym 

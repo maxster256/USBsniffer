@@ -1,0 +1,5 @@
+set -tmpdir "D:/usb-statemachine/usbproject/xst/projnav.tmp"
+set -xsthdpdir "D:/usb-statemachine/usbproject/xst"
+elaborate
+-ifn syncreader.prj
+-ifmt mixed

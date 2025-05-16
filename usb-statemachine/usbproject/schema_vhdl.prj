@@ -1,0 +1,3 @@
+vhdl work "D:\usb-statemachine\usbproject\syncreader.vhd"
+vhdl work "D:\usb-statemachine\usbproject\FSM_SendByte.vhd"
+vhdl work "D:\usb-statemachine\usbproject\schema.vhf"

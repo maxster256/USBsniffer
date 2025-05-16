@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/usb-statemachine/usbproject/testbench_isim_beh.exe" -prj "D:/usb-statemachine/usbproject/testbench_beh.prj" "work.testbench" 
