@@ -1,0 +1,8 @@
+AR fsm_sendbyte rtl D:/usb-statemachine/usbproject/FSM_SendByte.vhd sub00/vhpl05 1747231040
+EN schema NULL D:/usb-statemachine/usbproject/schema.vhf sub00/vhpl02 1747231045
+AR schema behavioral D:/usb-statemachine/usbproject/schema.vhf sub00/vhpl03 1747231046
+AR syncreader behavioral D:/usb-statemachine/usbproject/syncreader.vhd sub00/vhpl01 1747231042
+EN fsm_sendbyte NULL D:/usb-statemachine/usbproject/FSM_SendByte.vhd sub00/vhpl04 1747231039
+EN syncreader NULL D:/usb-statemachine/usbproject/syncreader.vhd sub00/vhpl00 1747231041
+AR ifd_mxilinx_schema behavioral D:/usb-statemachine/usbproject/schema.vhf sub00/vhpl07 1747231044
+EN ifd_mxilinx_schema NULL D:/usb-statemachine/usbproject/schema.vhf sub00/vhpl06 1747231043
