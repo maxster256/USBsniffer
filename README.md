@@ -8,3 +8,5 @@ Projekt FPGA, którego celem jest wyświetlanie przechwytywanych pakietów USB. 
 - wyświetlenie tych cyfr w VGA
 
 Aktualnie projekt wykonuje wszystkie te zadania, lecz występują jeszcze drobne 'bugi' w części odpowiedzialnej za wyświetlanie, które mogą zostać naprawione w najbliższym tygodniu. Dokumentacja z całego projektu dostępna będzie najpóźniej 28 maja. Aktualny kod naszego modułu znaleźć można w pliku `syncreader.vhd`
+
+Edit 28.05.2025: Dokumentacja projektu została załączona w pliku PDF.
